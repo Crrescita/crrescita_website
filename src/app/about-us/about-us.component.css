@@ -1,0 +1,171 @@
+.banner-desktop-home {
+
+    background-image: url('../../assets/img/home/home-bannr.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(232, 211, 115, 1);
+  }
+
+  .banner-mob-home {
+    background-image: url('../../assets/img/home/banner-mob.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+
+
+  }
+
+  .banner-content {
+    color: white;
+
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+  }
+
+  .home-border {
+    border: 10px solid rgba(232, 211, 115, 1);
+    opacity: 1;
+    width: 50%
+}
+
+
+  .home-mob-border {
+    border: 5px solid rgba(232, 211, 115, 1);
+    opacity: 1;
+    width: 75%;
+  }
+ 
+.sec-two-banner{
+  background: url('../../assets/img/about/section-2-back.png');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.card-box{
+  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+  border-left: 15px solid rgba(232, 211, 115, 1)
+}
+
+.ceo-icon{
+  width: 150px;
+  height: 150px;
+}
+
+.ceo-font-24{
+  font-family: "Outfit", sans-serif;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.circle-img {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(232, 211, 115, 1);
+}
+
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.strategy-banner{
+  background: url("../../assets/img/about/strategy-back.png");
+  background-size: cover;
+}
+.box-main{
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 1);
+
+}
+.border-r {
+  position: relative;
+  background: linear-gradient(to right, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: 2px calc(100% - 0px); /* Adjust the height of the left border */
+  background-position: right bottom;
+}
+
+
+.border-b {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: calc(100% - 24px) 2px; /* Adjust the width of the bottom border */
+  background-position: bottom left;
+}
+.border-b-right {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: calc(100% - 20px) 2px; /* Adjust the width of the bottom border */
+  background-position: bottom right;
+}
+
+
+.border-rb {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat,
+              linear-gradient(to right, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: calc(100% - 24px) 2px, 2px 90%; 
+  background-position: bottom left, right calc(100% - 20px); 
+}
+
+.box-about-border {
+
+  background:
+    linear-gradient(#e8d373, #e8d373) 20px 0,
+    linear-gradient(#e8d373, #e8d373) 0 calc(100% - 20px);
+  padding: 5px 40px 30px 30px;
+  background-size: 2px 100%, 100% 2px;
+  background-repeat: no-repeat;
+}
+
+
+  @media(max-width:767px) {
+    .ceo-icon{
+      width: 70px;
+      height: 70px;
+    }
+    .ceo-font-24{
+      
+      font-size: 12px;
+     
+    }
+    .circle-img {
+      width: 50px; /* Adjust the size as needed */
+      height: 50px; /* Adjust the size as needed */
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      background-color: rgba(232, 211, 115, 1);
+    }
+    
+    
+    .circle-img img {
+      width: auto;
+    }
+    .box-about-border {
+      padding: 5px 20px 30px 30px !important;
+    
+    }
+
+  }

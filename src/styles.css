@@ -1,0 +1,393 @@
+/* You can add global styles to this file, and also import other style files */
+  .philosopher-40-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  
+  .philosopher-86-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 86px;
+  }
+  .philosopher-32-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .philosopher-36-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .philosopher-28-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 31px;
+  }
+  .philosopher-24-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .philosopher-20-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+.f-w-400{
+font-weight: 400 !important;
+}
+
+  /* outfit font */
+  .font-outfit-light-12{
+    font-family: "Outfit", sans-serif;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+  .font-outfit-light-16{
+    font-family: "Outfit", sans-serif;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+  .font-outfit-light-18{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.font-outfit-20{
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    
+}
+.font-outfit-s-20{
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  
+}
+
+.font-outfit-regular-20{
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  
+}
+
+.font-outfit-light-20{
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 21px;
+  
+}
+ .font-outfit-24{
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    
+}
+
+.font-outfit-bold-24{
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    
+}
+.font-outfit-light-24{
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.font-outfit-28{
+    font-family: "Outfit", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.font-outfit-bold-32{
+font-family: "Outfit", sans-serif;
+font-size: 32px;
+font-weight: 700;
+line-height: 40.32px;
+
+}
+
+.font-outfit-36{
+    font-family: "Outfit", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.card-section-font {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1067px) { 
+    .philosopher-86-bold {
+    
+        font-size: 72px !important;
+        line-height: 76px;
+      }
+      .font-outfit-24{
+     
+        font-size: 22px !important;
+
+        line-height: 30px;
+        
+    }
+    .card-section-font {
+   
+      font-size: 32px;
+      line-height: 40px;
+    }
+   
+    
+}
+
+@media  (max-width: 767px) { 
+    .philosopher-86-bold {
+       
+        font-size: 48px !important;
+        line-height: 46px !important;
+      }
+      .philosopher-40-bold {
+        font-size: 24px !important;
+        line-height: 28px !important;
+      }
+      .philosopher-36-bold {
+      
+        font-size: 28px;
+        line-height: 28px;
+      }
+      .philosopher-32-bold {
+       
+        font-size: 22px;
+        line-height: 28px;
+      }
+      .philosopher-28-bold {
+    
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .font-outfit-24{
+
+        font-size: 18px !important;
+        line-height: 22px;
+        
+    }
+    .font-outfit-bold-24 {
+      font-size: 18px !important;
+      line-height: 22px !important;
+  }
+  .font-outfit-light-24{
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+    .font-outfit-light-18{
+    font-size: 14px !important;
+    line-height: 24px !important;
+
+  }
+  .font-outfit-regular-20{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+   
+    
+  }
+    
+  .card-section-font {
+
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+  .font-outfit-s-20{
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+  }
+}
+
+
+
+
+
+.colour-1{
+    color: rgba(1, 25, 58, 1);
+}
+.colour-2{
+    color: rgba(255, 255, 255, 1);
+}
+.colour-3{
+    color: rgba(119, 119, 119, 1);
+
+}
+.colour-4{
+  color: rgba(0, 0, 0, 1);
+}
+
+.colour-5{
+  color: rgba(191, 155, 60, 1);
+}
+
+
+
+
+.btn-style {
+  background-color: rgba(1, 25, 58, 1);
+  color: white;
+  width: auto;
+  white-space: nowrap;
+  padding: 5px 20px;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32.76px;
+  border: none;
+  cursor: pointer;
+
+
+}
+
+.btn-seemore {
+   
+    color:  rgba(1, 25, 58, 1);
+    font-family: "Outfit", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 25.2px;
+text-align: left;
+
+
+}
+.btn-seemore u {
+  
+    text-decoration: underline;
+}
+.btn-seemore:visited,
+.btn-seemore:active,
+.btn-seemore:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+.hr-project {
+  border: 2px solid rgba(232, 211, 115, 1);
+  opacity: 1;
+  width: 50%;
+
+}
+.home-border {
+  border: 10px solid rgba(232, 211, 115, 1);
+  opacity: 1;
+  width: 50%
+}
+
+
+/* footer */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #e8d373;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: rgba(1, 25, 58, 1);
+    ;
+}
+
+
+.footer-bg{
+    background-color: #e8d373;
+    text-decoration: none;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+    color: inherit; 
+}
+  .footer-section a:hover {
+    color: inherit; 
+  }
+  .footer-hr{
+  border: 2px solid rgba(255, 255, 255, 1);
+  opacity: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+  .comma-icon{
+    width: 100px; 
+    height: 75px;
+   }
+
+  @media (max-width: 767px) {
+    .web-scrollmenu {
+        white-space: inherit !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            flex-wrap: nowrap !important;
+            -ms-overflow-style: none !important;
+            scrollbar-width: none !important;
+            -webkit-scrollbar-width: none !important;
+            display: flex;
+            padding: 0px 20px !important;
+            
+      }
+
+      .web-scrollmenu::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+      }
+      
+      .web-scrollmenu::-webkit-scrollbar-track {
+        background: transparent !important;
+      }
+      
+      .web-scrollmenu::-webkit-scrollbar-thumb {
+        background: transparent !important;
+      }
+      .comma-icon{
+        width: 60px !important; 
+        height: 50px !important;
+       }
+       
+    
+}
