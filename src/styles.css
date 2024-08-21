@@ -1,8 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-  .philosopher-40-bold {
+
+
+.font-segoe-80{
+font-family: 'Segoe UI';
+font-size: 80px;
+font-weight: 900;
+line-height: 64px;
+letter-spacing: 10px;
+text-align: left;
+}
+
+
+
+.philosopher-40-bold {
     font-family: "Philosopher", sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 46px;
   }
   
@@ -48,12 +61,26 @@ font-weight: 400 !important;
 }
 
   /* outfit font */
+  .font-outfit-12{
+    font-family: "Outfit", sans-serif;
+font-size: 10px;
+font-weight: 400;
+line-height: 16.6px;
+
+  }
   .font-outfit-light-12{
     font-family: "Outfit", sans-serif;
 
     font-size: 12px;
     font-weight: 500;
     line-height: 24px;
+}
+.font-outfit-light-14{
+  font-family: "Outfit", sans-serif;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
   .font-outfit-light-16{
@@ -68,6 +95,12 @@ font-weight: 400 !important;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
+}
+.font-outfit-regular-18{
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .font-outfit-20{
@@ -115,10 +148,29 @@ font-weight: 400 !important;
     line-height: 30px;
     
 }
+.font-outfit-bold-24{
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    
+}
 .font-outfit-light-24{
   font-family: "Outfit", sans-serif;
   font-size: 24px;
   font-weight: 400;
+  line-height: 30px;
+}
+.font-outfit-regular-24{
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.font-outfit-main-24{
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 30px;
 }
 .font-outfit-28{
@@ -148,7 +200,13 @@ line-height: 40.32px;
   font-size: 40px;
   line-height: 46px;
 }
-
+.banner-font-24{
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  
+}
 
 @media (min-width: 768px) and (max-width: 1067px) { 
     .philosopher-86-bold {
@@ -173,6 +231,12 @@ line-height: 40.32px;
 }
 
 @media  (max-width: 767px) { 
+  .banner-font-24{
+    
+    font-size: 20px !important;
+    
+    
+  }
     .philosopher-86-bold {
        
         font-size: 48px !important;
@@ -200,16 +264,20 @@ line-height: 40.32px;
 
       .font-outfit-24{
 
-        font-size: 18px !important;
+        font-size: 17px !important;
         line-height: 22px;
         
     }
     .font-outfit-bold-24 {
-      font-size: 18px !important;
+      font-size: 17px !important;
       line-height: 22px !important;
   }
   .font-outfit-light-24{
-    font-size: 18px !important;
+    font-size: 17px !important;
+    line-height: 22px !important;
+  }
+  .font-outfit-regular-24{
+    font-size: 17px !important;
     line-height: 22px !important;
   }
     .font-outfit-light-18{
@@ -217,13 +285,28 @@ line-height: 40.32px;
     line-height: 24px !important;
 
   }
+  .font-outfit-main-24{
+
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .font-outfit-regular-18{
+   
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
   .font-outfit-regular-20{
     font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 16px;
    
     
   }
+  .font-outfit-28{
+   
+    font-size: 12px !important;
+    line-height: 20px !important;
+}
     
   .card-section-font {
 
@@ -237,10 +320,19 @@ line-height: 40.32px;
     line-height: 24px;
     
   }
+  .font-segoe-80{
+    
+    font-size: 60px !important;
+    
+    }
 }
 
 
-
+.home-mob-border {
+  border: 5px solid rgba(232, 211, 115, 1);
+  opacity: 1;
+  width: 75%;
+}
 
 
 .colour-1{
@@ -308,7 +400,7 @@ text-align: left;
 .hr-project {
   border: 2px solid rgba(232, 211, 115, 1);
   opacity: 1;
-  width: 50%;
+  width: 300px
 
 }
 .home-border {
@@ -316,6 +408,43 @@ text-align: left;
   opacity: 1;
   width: 50%
 }
+.box-main{
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 1);
+
+}
+
+.border-r {
+  position: relative;
+  background: linear-gradient(to right, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: 2px calc(100% - 0px); /* Adjust the height of the left border */
+  background-position: right bottom;
+}
+
+
+.border-b {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: calc(100% - 24px) 2px; /* Adjust the width of the bottom border */
+  background-position: bottom left;
+}
+.border-b-right {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: calc(100% - 20px) 2px; /* Adjust the width of the bottom border */
+  background-position: bottom right;
+}
+
+
+.border-rb {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat,
+              linear-gradient(to right, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
+  background-size: calc(100% - 24px) 2px, 2px 90%; 
+  background-position: bottom left, right calc(100% - 20px); 
+}
+
+
 
 
 /* footer */
@@ -368,7 +497,8 @@ text-align: left;
             scrollbar-width: none !important;
             -webkit-scrollbar-width: none !important;
             display: flex;
-            padding: 0px 20px !important;
+            padding: 0px 40px 0px 0px !important;
+            /* padding: 0px 20px; */
             
       }
 
@@ -388,6 +518,11 @@ text-align: left;
         width: 60px !important; 
         height: 50px !important;
        }
+       .hr-project {
+      
+        width: 200px !important;
+      
+      }
        
     
 }

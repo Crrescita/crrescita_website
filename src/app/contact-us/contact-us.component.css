@@ -1,18 +1,21 @@
 .banner-desktop-home {
 
-    background-image: url('../../assets/img/home/home-bannr.png');
-    background-size: cover;
+    background-image: url('../../assets/img/contact/contact-banner.png');
+ 
+    background-position: center;
+    width: 100%;
     background-position: bottom;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 868px;
     min-height: 100vh;
     position: relative;
-    background-color: rgba(232, 211, 115, 1);
+    /* background-color: rgba(232, 211, 115, 1); */
   }
 
   .banner-mob-home {
-    background-image: url('../../assets/img/home/banner-mob.png');
+    background-image: url('../../assets/img/contact/contact-mob-banner.png');
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -38,6 +41,76 @@
     box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
 
   }
-  /* .border-box-r{
-    
-  } */
+
+  .offset-bottom {
+    position: relative;
+    bottom: -40px;
+}
+.back-img{
+  background-image: url("../../assets/img/contact/back.png");
+ 
+  background-size: cover;
+}
+.custom-input {
+  border-radius: 0;
+  padding: 10px 10px; 
+ 
+  border: none;
+}
+.custom-input:focus {
+  outline: none; 
+  box-shadow: none; 
+}
+.form-style {
+  border: 1px solid rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, #FFFFFF 74%, rgba(232, 211, 115, 0.5) 100%);
+
+  padding: 20px;
+  margin-top: 50px;
+  
+  box-shadow: 0px 4px 15.5px 4px rgba(0, 0, 0, 0.3);
+
+}
+.form-hr{
+  border: 1px solid rgba(232, 211, 115, 1);
+  opacity: 1;
+}
+.custom-img {
+
+ height: 90%;
+ 
+}
+.box{
+  border: 1px solid rgba(0, 0, 0, 1)
+}
+.box-contact-border {
+
+  background:
+    linear-gradient(#e8d373, #e8d373) 20px 0,
+    linear-gradient(#e8d373, #e8d373) 0 calc(100% - 95px);
+  padding: 5px 40px 30px 30px;
+  background-size: 2px 100%, 100% 2px;
+  background-repeat: no-repeat;
+}
+
+@media(max-width:767px){
+  .box-contact-border {
+
+    background:
+      linear-gradient(#e8d373, #e8d373) 20px 0,
+      linear-gradient(#e8d373, #e8d373) 0 calc(100% - 20px);
+    padding: 5px 0px 30px 20px;
+    background-size: 2px 100%, 100% 2px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media (max-width: 1067px) {
+  .custom-img {
+      width: 100%;
+      height: auto;
+  }
+}
+

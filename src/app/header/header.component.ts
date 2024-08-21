@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component,ElementRef, ViewChild } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -11,4 +11,15 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 export class HeaderComponent {
 
+  menuToggle: boolean = false;
+
+  @ViewChild('navbarNav') navbarContent!: ElementRef;
+
+  toggleMenu() {
+    this.menuToggle = !this.menuToggle;
+  }
+
+  closeMenu() {
+    this.menuToggle = false;
+}
 }

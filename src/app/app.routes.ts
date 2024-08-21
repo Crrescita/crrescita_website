@@ -5,6 +5,9 @@ import { BlogComponent } from './blog/blog.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PagesComponent } from './pages/pages.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { WebsiteDevelopmentComponent } from './website-development/website-development.component';
+import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
+import { BrandingComponent } from './branding/branding.component';
 
 export const routes: Routes = [
 
@@ -12,8 +15,12 @@ export const routes: Routes = [
     {path:'about',component:AboutUsComponent},
     {path:'blog',component:BlogComponent},
     {path:'portfolio',component:PortfolioComponent},
-    {path:'pages',component:PagesComponent},
+    // {path:'pages',component:PagesComponent},
     {path:'contact',component:ContactUsComponent},
+    {path:'page',component:WebsiteDevelopmentComponent},
+    {path:'digital-marketing',component:DigitalMarketingComponent},
+    {path:'branding',component:BrandingComponent}
+    
    
   
 ];

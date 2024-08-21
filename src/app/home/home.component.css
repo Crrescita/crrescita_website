@@ -1,15 +1,18 @@
 /* home css start */
 .banner-desktop-home {
 
-    background-image: url('../../assets/img/home/home-bannr.png');
-    background-size: cover;
+    background-image: url('../../assets/img/home/banner-desktop.png');
+    
+    background-position: center;
+    width: 100%;
     background-position: bottom;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 868px;
     min-height: 100vh;
     position: relative;
-    background-color: rgba(232, 211, 115, 1);
+  
   }
 
   .banner-mob-home {
@@ -24,6 +27,7 @@
 
 
   }
+ 
 
   .banner-content {
     color: white;
@@ -43,6 +47,7 @@
     opacity: 1;
     width: 75%;
   }
+
 
   @media(max-width:767px) {
 
@@ -278,21 +283,38 @@
 .custom-input {
   border-bottom: 1px solid rgba(232, 211, 115, 1);
   border-radius: 0;
-  padding: 10px 10px; /* Equal padding for left and right */
-  border-left: none;
+  padding: 10px 10px; 
   border-top: none;
   border-right: none;
   opacity: 1;
 }
 .custom-input:focus {
-  outline: none; /* Removes the default focus outline */
-  box-shadow: none; /* Removes any shadow on focus */
+  outline: none; 
+  box-shadow: none; 
 }
 .form-style {
   box-shadow: 0px 4px 15.5px 4px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 1);
-  border-radius: 8px; /* Adjust border-radius as needed */
-  padding: 20px; /* Add padding to the form container */
+  border-radius: 10px;
+  padding: 20px; 
+  
+  
+
+}
+.custom-input {
+  border-radius: 0;
+  padding: 10px 10px;
+
+  border: none;
+}
+
+.custom-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form-hr {
+  border: 1px solid rgba(232, 211, 115, 1);
+  opacity: 1;
 }
 
 

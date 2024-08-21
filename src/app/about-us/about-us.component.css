@@ -1,18 +1,19 @@
 .banner-desktop-home {
 
-    background-image: url('../../assets/img/home/home-bannr.png');
-    background-size: cover;
+    background-image: url('../../assets/img/about/banner-desk.png');
+    background-position: center;
+    width: 100%;
     background-position: bottom;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 868px;
     min-height: 100vh;
     position: relative;
-    background-color: rgba(232, 211, 115, 1);
   }
 
   .banner-mob-home {
-    background-image: url('../../assets/img/home/banner-mob.png');
+    background-image: url('../../assets/img/about/about-banner-mob.png');
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -83,48 +84,16 @@
 
 
 .circle-img img {
-  width: 100%;
-  height: 100%;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
 }
 .strategy-banner{
   background: url("../../assets/img/about/strategy-back.png");
   background-size: cover;
 }
-.box-main{
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 1);
-
-}
-.border-r {
-  position: relative;
-  background: linear-gradient(to right, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
-  background-size: 2px calc(100% - 0px); /* Adjust the height of the left border */
-  background-position: right bottom;
-}
 
 
-.border-b {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
-  background-size: calc(100% - 24px) 2px; /* Adjust the width of the bottom border */
-  background-position: bottom left;
-}
-.border-b-right {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
-  background-size: calc(100% - 20px) 2px; /* Adjust the width of the bottom border */
-  background-position: bottom right;
-}
-
-
-.border-rb {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat,
-              linear-gradient(to right, rgba(232, 211, 115, 1) 1px, transparent 2px) no-repeat;
-  background-size: calc(100% - 24px) 2px, 2px 90%; 
-  background-position: bottom left, right calc(100% - 20px); 
-}
 
 .box-about-border {
 

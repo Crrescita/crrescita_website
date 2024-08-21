@@ -1,0 +1,114 @@
+.banner-desktop-digital {
+
+    background-image: url('../../assets/img/branding/brand-banner.png');
+
+    background-position: center;
+    width: 100%;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 868px;
+    min-height: 100vh;
+    position: relative;
+    /* background-color: rgba(232, 211, 115, 1); */
+}
+
+.banner-mob-digital {
+    background-image: url('../../assets/img/branding/brand-mob.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+
+
+}
+
+.banner-content {
+    color: white;
+
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+.custom-input {
+    border-radius: 0;
+    padding: 10px 10px;
+
+    border: none;
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-style-banner {
+
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 15.5px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.form-hr {
+    border: 1px solid rgba(232, 211, 115, 1);
+    opacity: 1;
+}
+
+.box-border {
+
+    background:
+      linear-gradient(#e8d373, #e8d373) 20px 0,
+      linear-gradient(#e8d373, #e8d373) 0 calc(100% - 20px);
+    padding: 40px;
+    margin-top: 20px;
+    background-size: 2px 100%, 100% 2px;
+    background-repeat: no-repeat;
+  }
+
+  .circle-img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      background-color: rgba(232, 211, 115, 1);
+  }
+  
+  
+  .circle-img img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+  
+  @media(max-width:767px){
+    .circle-img {
+        width: 50px; /* Adjust the size as needed */
+        height: 50px; /* Adjust the size as needed */
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        background-color: rgba(232, 211, 115, 1);
+      }
+      .img-sec1 {
+        width: 50%;
+        height: 50%;
+      }
+      
+      .circle-img img {
+        width: auto;
+      }
+  }

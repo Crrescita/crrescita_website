@@ -1,0 +1,197 @@
+.banner-desktop-web {
+
+    background-image: url('../../assets/img/website/desktop-banner1.png');
+ 
+    background-position: center;
+    width: 100%;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 868px;
+    min-height: 100vh;
+    position: relative;
+    /* background-color: rgba(232, 211, 115, 1); */
+  }
+
+  .banner-mob-web {
+    background-image: url('../../assets/img/website/web-mob.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+
+
+  }
+
+  .banner-content {
+    color: white;
+
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+  }
+  .custom-input {
+    border-radius: 0;
+    padding: 10px 10px;
+
+    border: none;
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-style-banner {
+
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 15.5px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.form-hr {
+    border: 1px solid rgba(232, 211, 115, 1);
+    opacity: 1;
+}
+
+  .contact-box{
+    background-color: rgba(255, 255, 255, 1);
+    border-left: 15px solid rgba(232, 211, 115, 1);
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+
+  }
+  .dev-box{
+    background-color: rgba(255, 255, 255, 1);
+    border-left: 15px solid rgba(232, 211, 115, 1);
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-top: 2px solid rgba(232, 211, 115, 1);
+    border-right: 2px solid rgba(232, 211, 115, 1);
+    border-bottom: 2px solid rgba(232, 211, 115, 1);
+
+  }
+
+
+  .offset-bottom {
+    position: relative;
+    bottom: -70px;
+}
+.space{
+    margin-top: 100px !important;
+}
+
+.icon-border {
+
+  background:
+    linear-gradient(#e8d373, #e8d373) 18px 0,
+    linear-gradient(#e8d373, #e8d373) 0 calc(100% - 18px);
+padding: 0px 0px 13px 70px ;
+
+  background-size: 2px 100%, 100% 2px;
+  background-repeat: no-repeat;
+}
+
+.img-icon{
+ width: 130px;
+ height: 130px;
+}
+.tops{
+  margin-top:170px ;
+}
+.d-size{
+  width: 150px;
+  height: 150px;
+}
+.web-box{
+  border: 1px solid rgba(232, 211, 115, 1)
+}
+.col-3:hover .web-box {
+  background-color: rgba(1, 25, 58, 1);
+}
+
+.col-3:hover .web-box p {
+  color: white;
+}
+.agency-box{
+  background-color: rgba(1, 25, 58, 1);
+}
+.agency-box1{
+background: rgba(232, 211, 115, 1);
+}
+.agency-icon{
+  width: 80px;
+  height: 80px;
+}
+.back-form{
+  background: linear-gradient(359.98deg, rgba(255, 255, 255, 0.9) 0.02%, rgba(232, 211, 115, 0.9) 33.54%, rgba(232, 211, 115, 0.9) 52.84%, rgba(232, 211, 115, 0.9) 71.28%, rgba(255, 255, 255, 0.9) 99.98%);
+border-radius: 10px;
+}
+@media(max-width:767px){
+    .space{
+        margin-top:0px !important;
+    }
+    .offset-bottom {
+      position: relative;
+      bottom: -40px;
+  }
+  .agency-icon{
+    width: 35px;
+    height: 35px;
+  }
+  .contact-box{
+    background-color: rgba(255, 255, 255, 1);
+    border-left: 5px solid rgba(232, 211, 115, 1);
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+  }
+  .dev-box{
+
+    border-left: 10px solid rgba(232, 211, 115, 1);
+
+  }
+  .icon-border {
+
+  padding: 0px 0px 13px 30px !important;
+  background:
+  linear-gradient(#e8d373, #e8d373) 10px 0,
+  linear-gradient(#e8d373, #e8d373) 0 calc(100% - 15px) !important;
+  background-size: 2px 100%, 100% 2px !important;
+  background-repeat: no-repeat !important;
+
+  }
+  
+  .img-icon{
+    width: 70px;
+    height: 70px;
+   }
+   .d-size{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.column-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: start;
+  height: 100%;
+}
+
+.color-web{
+ color: rgba(5, 89, 204, 0.3);
+
+}
+.box-pad{
+    padding: 0px 60px 0px 0px;
+}
+.box-back{
+  background: linear-gradient(359.98deg, rgba(255, 255, 255, 0.6) 0.02%, rgba(232, 211, 115, 0.6) 33.54%, rgba(232, 211, 115, 0.6) 52.84%, rgba(232, 211, 115, 0.6) 71.28%, rgba(255, 255, 255, 0.6) 99.98%);
+
+}
+
