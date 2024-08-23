@@ -95,15 +95,6 @@
 
 
 
-.box-about-border {
-
-  background:
-    linear-gradient(#e8d373, #e8d373) 20px 0,
-    linear-gradient(#e8d373, #e8d373) 0 calc(100% - 20px);
-  padding: 5px 40px 30px 30px;
-  background-size: 2px 100%, 100% 2px;
-  background-repeat: no-repeat;
-}
 
 
   @media(max-width:767px) {
@@ -132,9 +123,6 @@
     .circle-img img {
       width: auto;
     }
-    .box-about-border {
-      padding: 5px 20px 30px 30px !important;
-    
-    }
+   
 
   }

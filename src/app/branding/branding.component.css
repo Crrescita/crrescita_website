@@ -26,7 +26,16 @@
 
 
 }
-
+.banner-col{
+  background-image: url('../../assets/img/branding/banner-back11.png');
+    background-size: cover;
+    background-position: top;
+   
+}
+.custom-form{
+  background: linear-gradient(359.98deg, rgba(255, 255, 255, 0.9) 0.02%, rgba(232, 211, 115, 0.9) 33.54%, rgba(232, 211, 115, 0.9) 52.84%, rgba(232, 211, 115, 0.9) 71.28%, rgba(255, 255, 255, 0.9) 99.98%);
+border-radius: 10px;
+}
 .banner-content {
     color: white;
 
@@ -130,12 +139,7 @@
   background-size: cover;
   background-position: top;
 }
-.hr-project {
-  border: 2px solid rgba(232, 211, 115, 1);
-  opacity: 1;
-  width: 50%;
 
-}
 .custom-box {
   display: flex;
   align-items: center;
@@ -153,9 +157,25 @@
   width: 100%;
   height: auto;
 }
+.box-brand{
+  border: 1px solid rgba(1, 25, 58, 1)
+}
+
+.section-back{
+ background: linear-gradient(180deg, #01193A 0%, #0559CC 100%);
+
+}
+.img-resize{
+  width: 30px;
+  height: 30px;
+}
 
 
   @media(max-width:767px){
+    .img-resize{
+      width: 21px;
+      height: 21px;
+    }
     .circle-img {
         width: 50px; /* Adjust the size as needed */
         height: 50px; /* Adjust the size as needed */
@@ -176,7 +196,8 @@
         padding: 10px !important; 
     }
       .circle-img img {
-        width: auto;
+        width: 40px;
+        height: 40px;
       }
       .d-size{
         width: 80px;
@@ -192,3 +213,5 @@
 
     }
   }
+
+  

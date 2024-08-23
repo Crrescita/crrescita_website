@@ -9,6 +9,14 @@ line-height: 64px;
 letter-spacing: 10px;
 text-align: left;
 }
+.font-segoe-64{
+  font-family: 'Segoe UI';
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 64px;
+  letter-spacing: 10px;
+  
+  }
 
 
 
@@ -25,10 +33,23 @@ text-align: left;
     font-size: 86px;
     line-height: 86px;
   }
+  .philosopher-64-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    font-style: italic;
+  }
   .philosopher-32-bold {
     font-family: "Philosopher", sans-serif;
     font-weight: 700;
     font-size: 32px;
+    line-height: 40px;
+  }
+  .philosopher-30-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
     line-height: 40px;
   }
   .philosopher-36-bold {
@@ -109,6 +130,9 @@ line-height: 16.6px;
     font-weight: 500;
     line-height: 21px;
     
+}
+.font-w-700{
+  font-weight: 700 !important;
 }
 .font-outfit-s-20{
   font-family: "Outfit", sans-serif;
@@ -242,6 +266,11 @@ line-height: 40.32px;
         font-size: 48px !important;
         line-height: 46px !important;
       }
+      .philosopher-64-bold {
+     
+        font-size: 24px !important;
+        line-height: 24px !important;
+      }
       .philosopher-40-bold {
         font-size: 24px !important;
         line-height: 28px !important;
@@ -325,6 +354,17 @@ line-height: 40.32px;
     font-size: 60px !important;
     
     }
+    .font-segoe-64{
+      
+      font-size: 40px !important;
+      
+      
+      }
+    .philosopher-30-bold {
+      
+      font-size: 16px!important;
+      line-height: 28px!important;
+    }
 }
 
 
@@ -352,6 +392,10 @@ line-height: 40.32px;
 .colour-5{
   color: rgba(191, 155, 60, 1);
 }
+.color-web{
+  color: rgba(5, 89, 204, 0.3);
+ 
+ }
 
 
 
@@ -443,6 +487,15 @@ text-align: left;
   background-size: calc(100% - 24px) 2px, 2px 90%; 
   background-position: bottom left, right calc(100% - 20px); 
 }
+.box-about-border {
+
+  background:
+    linear-gradient(#e8d373, #e8d373) 20px 0,
+    linear-gradient(#e8d373, #e8d373) 0 calc(100% - 20px);
+  padding: 5px 40px 30px 20px;
+  background-size: 2px 100%, 100% 2px;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -524,5 +577,14 @@ text-align: left;
       
       }
        
+      .box-about-border {
+        padding: 5px 20px 30px 30px !important;
+        background:
+        linear-gradient(#e8d373, #e8d373) 10px 0,
+        linear-gradient(#e8d373, #e8d373) 0 calc(100% - 15px);
     
+      background-size: 2px 100%, 100% 2px;
+      background-repeat: no-repeat;
+      
+      }
 }
