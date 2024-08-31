@@ -97,8 +97,8 @@
   /* Add this CSS to your styles */
 
   .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.3) ; 
-    border-radius: 5px ;
+    background-color: rgba(255, 255, 255, 0.3) !important; 
+    border-radius: 5px !important;
   }
   .dropdown-item {
     color:  rgba(1, 25, 58, 1) !important;
@@ -115,6 +115,7 @@
 @media screen and (min-width:1025px) {
   .navbar .dropdown:hover .dropdown-menu {
     display: block !important;
+
     border-radius: unset !important;
     margin-top: 9px !important; 
 
@@ -144,7 +145,7 @@
 .dropdown-menu .dropdown-item:focus,
 .dropdown-menu .dropdown-item:active,
 .dropdown-menu .dropdown-item.active {
-    /* background-color: transparent; */
+    background-color: transparent;
     color: inherit;
 
 }
@@ -172,9 +173,11 @@
   border-radius: 5px !important;
 }
 .dropdown-item {
-  color: rgba(255, 255, 255, 1) !important;
+  color:  rgba(255, 255, 255, 1) !important;
  
 }
 
 }
+
+
   
