@@ -21,6 +21,14 @@ text-align: left;
   letter-spacing: 10px;
   
   }
+  .font-segoe-48{
+    font-family: 'Segoe UI';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 5px;
+    
+    }
 
 
 
@@ -378,6 +386,7 @@ line-height: 40.32px;
       
       
       }
+     
     .philosopher-30-bold {
       
       font-size: 16px!important;
