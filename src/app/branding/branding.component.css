@@ -232,10 +232,7 @@ border-radius: 10px;
  
 
   .time-line-box {
-    /* height: 100px; 
-    padding: 100px 0;
-    width: 100%;
-    background-color: #dadefe; */
+    
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
@@ -297,22 +294,8 @@ border-radius: 10px;
     justify-content: start;
     width: 100%;
   }
-  .swiper-container::-webkit-scrollbar-track{
-     background:#a8a8a8b6;
-  }
-  .swiper-container::-webkit-scrollbar{
-    height: 2px;
-  }
-  .swiper-container::-webkit-scrollbar-thumb{
-     background: #4F4F4F !important;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 12px;
-   width: 100%;
-    height: 100%;
-    position: relative;
-  }
+ 
+ 
 
   
  
