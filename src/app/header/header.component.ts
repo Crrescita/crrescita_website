@@ -13,13 +13,16 @@ export class HeaderComponent {
 
   menuToggle: boolean = false;
 
-  @ViewChild('navbarNav') navbarContent!: ElementRef;
+  // @ViewChild('navbarSupportedContent') navbarContent!: ElementRef;
 
   toggleMenu() {
     this.menuToggle = !this.menuToggle;
+    console.log('Menu Toggle State:', this.menuToggle);
   }
 
   closeMenu() {
     this.menuToggle = false;
+    console.log('Menu closed');
+
 }
 }

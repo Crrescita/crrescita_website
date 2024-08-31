@@ -17,7 +17,7 @@ export const routes: Routes = [
     {path:'portfolio',component:PortfolioComponent},
     // {path:'pages',component:PagesComponent},
     {path:'contact',component:ContactUsComponent},
-    {path:'page',component:WebsiteDevelopmentComponent},
+    {path:'website-development',component:WebsiteDevelopmentComponent},
     {path:'digital-marketing',component:DigitalMarketingComponent},
     {path:'branding',component:BrandingComponent}
     

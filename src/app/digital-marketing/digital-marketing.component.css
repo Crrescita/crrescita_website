@@ -1,8 +1,8 @@
 .banner-desktop-digital {
 
-    background-image: url('../../assets/img/digital/desktop-digital-banner.png');
-
-    background-position: center;
+    background-image: url('../../assets/img/digital/digital-resize-banner.jpg');
+background-size: cover;
+  background-repeat: no-repeat;
     width: 100%;
     background-position: bottom;
     display: flex;

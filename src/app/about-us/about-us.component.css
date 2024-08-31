@@ -1,9 +1,9 @@
 .banner-desktop-home {
 
-    background-image: url('../../assets/img/about/banner-desk.png');
+    background-image: url('../../assets/img/about/about-banner-resize.jpg');
     background-position: center;
     width: 100%;
-    background-position: bottom;
+  background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;

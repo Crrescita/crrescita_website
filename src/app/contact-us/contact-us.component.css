@@ -1,8 +1,8 @@
 .banner-desktop-home {
 
-    background-image: url('../../assets/img/contact/contact-banner.png');
- 
-    background-position: center;
+    background-image: url('../../assets/img/contact/contact-banner-resize.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
     width: 100%;
     background-position: bottom;
     display: flex;
@@ -11,7 +11,7 @@
     height: 868px;
     min-height: 100vh;
     position: relative;
-    /* background-color: rgba(232, 211, 115, 1); */
+   
   }
 
   .banner-mob-home {

@@ -1,10 +1,10 @@
 .banner-desktop-web {
 
-    background-image: url('../../assets/img/website/desktop-banner1.png');
- 
-    background-position: center;
+    background-image: url('../../assets/img/website/website-banner-resize.jpg');
+ background-position: bottom;
+   background-size: cover;
     width: 100%;
-    background-position: bottom;
+   background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

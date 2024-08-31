@@ -1,8 +1,8 @@
 /* home css start */
 .banner-desktop-home {
 
-    background-image: url('../../assets/img/home/banner-desktop.png');
-    
+    background-image: url('../../assets/img/home/banner-resize.jpg');
+    background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     background-position: bottom;
@@ -37,15 +37,20 @@
     max-width: 100%;
   }
 
-  .home-border {
+  /* .home-border {
     border: 10px solid rgba(232, 211, 115, 1);
     opacity: 1;
-  }
+    width: 85%
+  } */
 
   .home-mob-border {
     border: 5px solid rgba(232, 211, 115, 1);
     opacity: 1;
     width: 75%;
+  }
+  .img-sec1 {
+    width: 100px;
+    height: 100px;
   }
 
 
@@ -63,8 +68,8 @@
     }
 
     .img-sec1 {
-      width: 50%;
-      height: 50%;
+      width: 70px;
+      height: 70px;
     }
 
     .custom-box {
@@ -185,7 +190,7 @@
 .box-border-right {
   background:
 
-    linear-gradient(#e8d373, #e8d373) 98% 0 / 10px 100% no-repeat,
+    linear-gradient(#e8d373, #e8d373) 96% 0 / 10px 100% no-repeat,
     linear-gradient(#e8d373, #e8d373) 0 95% / 100% 10px no-repeat;
 
 
@@ -258,6 +263,7 @@
     
     }
     
+    
 
   }
 
@@ -318,5 +324,27 @@
 }
 
 
+.hr-container {
+  position: relative;
+  width: 88%;
+  ; /* Adjust margin as needed */
+}
+
+.home-border {
+ 
+  margin: 0;
+  border: 10px solid rgba(232, 211, 115, 1);
+  opacity: 1;
+  width: 100%
+}
+
+.hr-image {
+  position: absolute;
+  right: -50px;
+  top: 100%;
+  transform: translateY(-50%);
+  height: 80px; /* Adjust size as needed */
+  width: auto;
+}
 
   

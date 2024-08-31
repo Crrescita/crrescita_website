@@ -13,6 +13,10 @@
     box-shadow: none !important;
 }
 
+.menu-colour{
+  color: rgba(1, 25, 58, 1);
+}
+
   .navbar-nav {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgba(255, 255, 255, 0.3);
@@ -40,16 +44,47 @@
   } */
 
   .header-logo {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
-  .nav-button {
+  .nav-icon {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
+ 
+ 
+.navbar-toggler.custom-toggler {
+  
+  border: none !important; 
+}
+.navbar-toggler .custom-toggler i.fa-bars-staggered {
+  color:  rgba(1, 25, 58, 1) !important;
+  
+}
+/* Remove focus outline */
+.navbar-toggler.custom-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.3);
+
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
 
   @media(max-width:767px){
     .header-logo {
@@ -58,3 +93,88 @@
       }
     
   }
+
+  /* Add this CSS to your styles */
+
+  .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.3) ; 
+    border-radius: 5px ;
+  }
+  .dropdown-item {
+    color:  rgba(1, 25, 58, 1) !important;
+   
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.3) !important; 
+    color:  rgba(1, 25, 58, 1) !important; 
+  }
+
+@media screen and (min-width:1025px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block !important;
+    border-radius: unset !important;
+    margin-top: 9px !important; 
+
+}
+.icon-header{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+@media screen and (max-width:1024px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    text-align: center !important;
+  
+
+}
+}
+
+.dropdown-toggle::after {
+  content: none !important;
+}
+
+
+/* Remove hover effect from dropdown items */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item.active {
+    /* background-color: transparent; */
+    color: inherit;
+
+}
+
+
+
+@media(max-width: 992px){
+  .navbar-nav {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.menu-colour{
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.nav-item {
+  padding: 2px;
+}
+.dropdown-menu {
+  background-color: black !important; 
+  border-radius: 5px !important;
+}
+.dropdown-item {
+  color: rgba(255, 255, 255, 1) !important;
+ 
+}
+
+}
+  
