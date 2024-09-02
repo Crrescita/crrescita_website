@@ -22,7 +22,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 380px;
+    min-height: 50vh;
     position: relative;
 
 
@@ -232,7 +233,7 @@
     font-family: "Outfit", sans-serif;
   font-size: 20px;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 26px;
   }
 
   @media(max-width:767px) {

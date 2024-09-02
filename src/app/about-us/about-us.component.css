@@ -19,7 +19,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 380px;
+    min-height: 50vh;
     position: relative;
 
 
@@ -58,8 +59,8 @@
 }
 
 .ceo-icon{
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
 }
 
 .ceo-font-24{
@@ -121,7 +122,9 @@
     
     
     .circle-img img {
-      width: auto;
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
     }
    
 

@@ -28,7 +28,8 @@ background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 380px;
+    min-height: 50vh;
     position: relative;
 
 
