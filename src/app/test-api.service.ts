@@ -1,18 +1,17 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Injectable } from '@angular/core';
 import { environment } from '../environment';
-import { BehaviorSubject } from 'rxjs';
-import { finalize } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class TestApiService {
 
   apiUrl = environment.apiUrl;
 
 
-  constructor(private http: HttpClient ) {}
+  constructor(private http: HttpClient) { }
 
   post(apiName: any, data: any): Observable<any> {
     const url = `${this.apiUrl + apiName}`;
@@ -30,6 +29,3 @@ getwithoutid(apiName: any): Observable<any> {
     return this.http.get<any>(url);
 }
 }
-
-  
-

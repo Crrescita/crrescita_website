@@ -1,0 +1,10 @@
+.top-banner1 {
+  /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.84), #d4bf61),
+  url("../../assets/img/than1.jpeg"); */
+    padding: 8rem 0 5rem;
+    background-position: 100% center;
+    background-blend-mode: overlay;
+    background-size: cover;
+    
+
+  }

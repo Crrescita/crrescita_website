@@ -92,7 +92,7 @@
                         <p class="font-outfit-bold-24 colour-1">
                             <i class="fa-solid fa-clock me-2"></i>Hours of creative work
                         </p>
-                        <p class="mb-0 font-outfit-s-20 colour-3">9:00- 18:00 (Mon- Fri)
+                        <p class="mb-0 font-outfit-s-20 colour-3">10:00- 19:00 (Mon- Fri)
                             <br> Excluding Holidays
                         </p>
                     </div>
@@ -102,7 +102,7 @@
                         <p class="font-outfit-bold-24 colour-1">
                             <i class="fa-solid fa-phone me-2 "></i>Phone Number
                         </p>
-                        <p class="mb-0 font-outfit-s-20 colour-3">0123456789
+                        <p class="mb-0 font-outfit-s-20 colour-3"> 080766 68461
                         </p>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                         <p class="font-outfit-bold-24 colour-1">
                             <i class="fa-solid fa-envelope me-2"></i>General Enquiry
                         </p>
-                        <p class="mb-0 font-outfit-s-20 colour-3"> infocrrescita&#64;crrescita.com
+                        <p class="mb-0 font-outfit-s-20 colour-3"> contact&#64;crrescita.com
                         </p>
                     </div>
                 </div>
@@ -138,23 +138,41 @@
                 <img src="../../assets/img/contact/imag11.png" alt="" class="img-fluid custom-img">
             </div>
             <div class="col-lg-7 pt-4 ">
-                <form class="mt-lg-5 mt-3 custom-form ms-lg-5 ">
+                <form class="mt-lg-5 mt-3 custom-form ms-lg-5 " [formGroup]="formGroup"  (ngSubmit)="submit()">
                     <p class="philosopher-40-bold colour-1 text-center text-md-start">LET'S GET IN TOUCH</p>
                     <div class="form-style mt-4">
                         <div class="form-group mb-5 mt-4">
-                            <input type="text" class="form-control custom-input" placeholder="Name">
+                            <input type="text" class="form-control custom-input" formControlName="name" placeholder="Name"[ngClass]="{
+                                'is-invalid':
+                                  g['name'] && g['name'].errors && g['name'].touched
+                              }">
+                              <small *ngIf="g['name'] && g['name'].hasError('required') &&
+                              g['name'].touched" class="font-outfit-light-14 colour-3 px-2">Please Enter Your Name</small> 
+                                
                             <hr class="form-hr m-0 p-0">
                         </div>
                         <div class="form-group mb-5">
-                            <input type="tel" class="form-control custom-input" placeholder="Phone Number">
+                            <input type="text" class="form-control custom-input" formControlName="phone" placeholder="Phone Number"
+                            [ngClass]="{
+                                'is-invalid':
+                                  g['phone'] && g['phone'].errors && g['phone'].touched
+                              }">
+                              <small *ngIf="g['phone'] && g['phone'].hasError('required') &&
+                              g['phone'].touched" class="font-outfit-light-14 colour-3 px-2">Please Enter Your Phone Number</small>   
                             <hr class="form-hr m-0 p-0">
                         </div>
                         <div class="form-group mb-5">
-                            <input type="email" class="form-control custom-input" placeholder="Email">
+                            <input type="email" class="form-control custom-input" formControlName="email" placeholder="Email"
+                            [ngClass]="{
+                                'is-invalid':
+                                  g['email'] && g['email'].errors && g['email'].touched
+                              }">
+                               <small *ngIf="g['email'] && g['email'].hasError('required') &&
+                               g['email'].touched" class="font-outfit-light-14 colour-3 px-2">Please Enter Your Email</small>   
                             <hr class="form-hr m-0 p-0">
                         </div>
                         <div class="form-group mb-5">
-                            <textarea class="form-control custom-input mb-0 pb-0" placeholder="Message"></textarea>
+                            <textarea class="form-control custom-input mb-0 pb-0" formControlName="message" placeholder="Message"></textarea>
                             <hr class="form-hr m-0 p-0">
                         </div>
                         <div class="form-group mb-5">

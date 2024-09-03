@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CustomFormComponent } from '../custom-form/custom-form.component';
 
 @Component({
   selector: 'app-digital-marketing',
   standalone: true,
-  imports: [],
+  imports: [CustomFormComponent],
   templateUrl: './digital-marketing.component.html',
   styleUrl: './digital-marketing.component.css'
 })

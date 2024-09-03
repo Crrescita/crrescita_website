@@ -1,0 +1,83 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
+import { TestApiService } from '../test-api.service';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-custom-form',
+  standalone: true,
+  imports: [CommonModule,ReactiveFormsModule,RouterModule],
+  templateUrl: './custom-form.component.html',
+  styleUrl: './custom-form.component.css'
+})
+export class CustomFormComponent {
+  formGroup!:FormGroup
+  submitted = false;
+  btndisabled: boolean = false;
+  
+
+  constructor(
+    private api:TestApiService, 
+    private fb:FormBuilder, 
+    private router: Router ,
+    private toastr: ToastrService){
+  
+  
+    this.formGroup = this.fb.group({
+      name : ['', [Validators.required]],
+      phone : ['', [Validators.required]],
+      email : ['', [Validators.required]],
+      message : ['', []]
+    })
+  }
+  
+  get g() {
+    return this.formGroup.controls;
+  }
+  
+  submit(){
+    if (this.formGroup.invalid) {
+      this.formGroup.markAllAsTouched();
+      return;
+    }
+  
+  
+    const contactdata = {
+      name: this.g['name'].value,
+      email: this.g['email'].value,
+      phone: this.g['phone'].value,
+      message: this.g['message'].value,
+    };
+    this.btndisabled = true;
+    this.submitted = true;
+
+
+    this.api.post('contact/contactform', contactdata).subscribe((response:any)=>{
+    //  console.log(response)
+  
+     if (response.status === 200) {
+      this.btndisabled = false;
+      // this.toastr.success(response.message, "Success");
+      this.formGroup.reset();
+      this.submitted = false;
+
+      this.router.navigate(['/thankyou']);
+  } else {
+      // Handle the error case here if needed
+      this.btndisabled = false;
+      this.toastr.error("An error occurred. Please try again.", "Error");
+  }
+  
+  
+  },
+  (error) => {
+    this.toastr.error("Error submitting contact form", "Error");
+    console.error("Error submitting contact form: ", error);
+  
+  }
+  )
+  }
+}
