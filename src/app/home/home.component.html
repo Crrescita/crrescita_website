@@ -17,7 +17,7 @@
             <p class="banner-font-24 colour-6 mt-2" >Unleash your brand’s full potential with our innovative approach where creativity thrives and designs shine. We turn your ideas into impactful, eye-catching designs that resonate with your audience.</p>
           </div>
           </div>
-            <button href="#" class="btn-style px-2 py-0">Get Started
+            <button href="#" class="btn-style px-2 py-0" data-bs-toggle="modal" data-bs-target="#contactModal">Get Started
               <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
           </button>
           </div>
@@ -394,10 +394,11 @@
                     <p class="card-section-font colour-2  mt-lg-5 mb-md-3 mb-2">CRAFTING UNIQUE SOLUTIONS FOR YOUR BUSINESS</p>
                 </div>
                 <div class="col-md-6 col-5  d-flex justify-content-end ">
-                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal">
+                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal" data-bs-toggle="modal" data-bs-target="#contactModal">
                         Get Started
                         <i class="fa-regular fa-circle mx-1 mt-1" style="color:  rgba(255, 255, 255, 1); font-size: 10px;"></i>
                     </a>
+      
                 </div>
             </div>
         </div>
@@ -442,7 +443,9 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+
+<app-modal-form></app-modal-form>
+<!-- <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-md back-form">
     <div class="modal-content form-style-banner">
       <div class="modal-header">
@@ -477,4 +480,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

@@ -13,7 +13,7 @@
                         <p class="banner-font-24 colour-6">Every brand has a story, and we’re here to help you tell it in the most captivating way possible. By leveraging our expertise in strategic branding, innovative design, and market insights, we position your brand for success in a competitive landscape.</p>
                         </div>
                         </div>
-                        <button href="#" class="btn-style px-2 py-0">
+                        <button href="#" class="btn-style px-2 py-0" data-bs-toggle="modal" data-bs-target="#contactModal">
                             Get Started
                             <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
                         </button>
@@ -411,7 +411,7 @@
                     <p class="card-section-font colour-2  mt-lg-5 mb-md-3 mb-2">CRAFTING UNIQUE SOLUTIONS FOR YOUR BUSINESS</p>
                 </div>
                 <div class="col-md-6 col-5  d-flex justify-content-end ">
-                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal">
+                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal" data-bs-toggle="modal" data-bs-target="#contactModal">
                         Get Started
                         <i class="fa-regular fa-circle mx-1 mt-1" style="color:  rgba(255, 255, 255, 1); font-size: 10px;"></i>
                     </a>
@@ -422,41 +422,5 @@
 </section>
 
 
-
 <!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-md back-form">
-      <div class="modal-content form-style-banner">
-        <div class="modal-header">
-          <p class="modal-title philosopher-40-bold colour-1 text-center" id="contactModalLabel">Contact Us</p>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="">
-   
-            <div class="form-group mb-4 mt-3">
-              <input type="text" class="form-control custom-input" placeholder="Name">
-              <hr class="form-hr m-0 p-0">
-            </div>
-            <div class="form-group mb-4">
-              <input type="tel" class="form-control custom-input" placeholder="Phone Number">
-              <hr class="form-hr m-0 p-0">
-            </div>
-            <div class="form-group mb-4">
-              <input type="email" class="form-control custom-input" placeholder="Email">
-              <hr class="form-hr m-0 p-0">
-            </div>
-            <div class="form-group mb-4">
-              <textarea class="form-control custom-input mb-0 pb-0" placeholder="Message"></textarea>
-              <hr class="form-hr m-0 p-0">
-            </div>
-            <div class="form-group mb-4">
-              <button type="submit" class="btn-style py-0 px-2">Get In Touch
-                <i class="fa-regular fa-circle mx-1 mt-1" style="color: #f0f2f4; font-size: 10px;"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+<app-modal-form></app-modal-form>

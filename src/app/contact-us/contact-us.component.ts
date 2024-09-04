@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
+import { ModalFormComponent } from '../modal-form/modal-form.component';
 
 @Component({
   selector: 'app-contact-us',
   standalone: true,
-  imports: [CommonModule,ReactiveFormsModule,RouterModule],
+  imports: [CommonModule,ReactiveFormsModule,RouterModule,ModalFormComponent],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'
 })
