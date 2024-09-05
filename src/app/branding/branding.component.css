@@ -1,8 +1,9 @@
 .banner-desktop-digital {
 
-    background-image: url('../../assets/img/branding/branding-banner-desktop.jpg'),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.719), rgba(191, 156, 60, 0.934));;
-background-size: cover;
+    background-image: url('../../assets/img/branding/branding1.png'),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.719), rgba(191, 156, 60, 0.806));;
+    background-size: cover, cover; 
+    background-blend-mode: overlay; 
     background-repeat: no-repeat;
     width: 100%;
   

@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { ModalFormComponent } from '../modal-form/modal-form.component';
+import { GoogleAnalyticsService } from 'ngx-google-analytics';
 
 @Component({
   selector: 'app-contact-us',
@@ -23,7 +24,9 @@ constructor(
   private api:TestApiService, 
   private fb:FormBuilder, 
   private router: Router ,
-  private toastr: ToastrService){
+  private toastr: ToastrService,
+  private gaService: GoogleAnalyticsService
+){
 
 
   this.formGroup = this.fb.group({
@@ -52,12 +55,18 @@ submit(){
     message: this.g['message'].value,
   };
   this.api.post('contact/contactform', contactdata).subscribe((response:any)=>{
-   console.log(response)
+  //  console.log(response)
 
    if (response.status === 200) {
     this.toastr.success(response.message, "Success");
     this.formGroup.reset();
+        // Fire Google Analytics event
+        this.gaService.event('contact_us_form_submission', 'submit', 'contact_form');
+
     this.router.navigate(['/thankyou']);
+
+
+
 } else {
     // Handle the error case here if needed
     this.toastr.error("An error occurred. Please try again.", "Error");
@@ -71,4 +80,16 @@ submit(){
 
 }
 )
-}}
+}
+
+
+trackButtonClick() {
+  this.gaService.event('contact_us_get_started_btn', 'user_interaction', 'Contact us');
+}
+
+trackButtonFooterGetStarted() {
+  this.gaService.event('contact_us_footer_get_started_btn', 'user_interaction', 'Contact us');
+}
+
+
+}

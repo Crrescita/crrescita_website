@@ -17,7 +17,7 @@
             <p class="banner-font-24 colour-6 mt-2" >Unleash your brand’s full potential with our innovative approach where creativity thrives and designs shine. We turn your ideas into impactful, eye-catching designs that resonate with your audience.</p>
           </div>
           </div>
-            <button href="#" class="btn-style px-2 py-0" data-bs-toggle="modal" data-bs-target="#contactModal">Get Started
+            <button href="#" class="btn-style px-2 py-0 " data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonClick()">Get Started
               <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
           </button>
           </div>
@@ -40,7 +40,9 @@
             <p class="philosopher-36-bold colour-1 text-uppercase m-0">Creative Hub</p>
             <hr class="home-mob-border m-0 ">
             <p class="banner-font-24 colour-1 pt-1">Where Ideas Blossom and Designs Shine Bright - Unleash Your Brand's Potential Today!</p>
-           
+            <button href="#" class="btn-style px-2 py-0 " data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonClick()">Get Started
+              <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
+          </button>
           </div>
         </div>
 
@@ -57,7 +59,7 @@
         <div class="col-lg-4 mb-4 p-lg-4 d-flex flex-column">
 
           <div class=" box-border h-100  py-4">
-            <div class="text-md-center text-left">
+            <div class="text-md-center image-container text-left">
             <img src="../../assets/img/home/icon-2.png" class="img-fluid img-sec1" alt="Image 1">
           </div>
             <div class="content mt-3">
@@ -108,7 +110,7 @@
        
         
           <div class="col-lg-7 d-flex align-items-center mt-lg-5  justify-content-end">
-            <button href="#" class="btn-style ">View All Projects
+            <button href="#" class="btn-style icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonViewMoreClick()">View More
               <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
 
             </button>
@@ -135,7 +137,8 @@
             <p class="font-outfit-light-18  colour-1 mb-0 mb-lg-3">Boost your brand with digital promotions! Engage audiences online through targeted ads, social media, and SEO.</p>
            
            
-            <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More</a>
+            <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonKnowMoreClick()">Know More
+              <i class="fa-regular fa-circle mx-1 mt-1 " style=" font-size: 10px;"></i></a>
 
           </div>
         </div>
@@ -149,7 +152,8 @@
         <p class="font-outfit-light-18 colour-1 mb-0 mb-lg-3">
           Product branding creates a unique identity for your product, making it memorable and trustworthy to customers.
         </p>
-        <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More</a>
+        <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonKnowMoreClick()">Know More
+          <i class="fa-regular fa-circle mx-1 mt-1 " style=" font-size: 10px;"></i></a>
       </div>
     </div>
   </div>
@@ -182,7 +186,8 @@
       <p class="font-outfit-24 fw-bold text-uppercase text-align-left mb-0 mb-lg-3">Website Design &
         Development</p>
       <p class="font-outfit-light-18 mb-0 mb-lg-3 colour-1">Transform your ideas into stunning websites with our expert design and development services. Easy, fast, and effective!</p>
-        <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More</a>
+        <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonKnowMoreClick()">Know More
+          <i class="fa-regular fa-circle mx-1 mt-1 " style=" font-size: 10px;"></i></a>
     </div>
   </div>
   </div>
@@ -353,7 +358,8 @@
                 <p class="font-outfit-bold-24 mb-1 mb-md-3 colour-1 text-uppercase">Website <br> Development </p>
                 <p  class="project-font-20 mb-1 mb-md-3 colour-3">Explore the latest in website development with our expert insights on modern frameworks, responsive design, and best practices for building dynamic, user-friendly websites. Stay ahead in the digital landscape!</p>
                
-                <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More</a>
+                <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonBlogKnowMoreClick()">Know More
+                  <i class="fa-regular fa-circle mx-1 mt-1 " style=" font-size: 10px;"></i></a>
               </div>
             </div>
           </div>
@@ -364,7 +370,8 @@
                 <p class="font-outfit-light-16 mb-1 mb-md-3 colour-3">August 27, 2024</p>
                 <p class="font-outfit-bold-24 mb-1 mb-md-3  colour-1 text-uppercase">Digital<br> Marketing</p>
                 <p  class="project-font-20 mb-1 mb-md-3 colour-3">Explore the essentials of digital marketing with our insights on SEO, social media, and email strategies. Boost your online presence and drive engagement through effective digital channels.</p>
-                <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More</a>
+                <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonBlogKnowMoreClick()">Know More
+                  <i class="fa-regular fa-circle mx-1 mt-1 " style=" font-size: 10px;"></i></a>
               </div>
             </div>
           </div>
@@ -375,7 +382,9 @@
                 <p class="font-outfit-light-16 mb-1 mb-md-3 colour-3">April 10, 2024</p>
                 <p class="font-outfit-bold-24 mb-1 mb-md-3 colour-1 text-uppercase">Product<br> Branding</p>
                 <p  class="project-font-20 mb-1 mb-md-3 colour-3">Elevate your product with strategic branding that connects deeply with your audience. Our expertise in web development ensures your brand shines online, driving engagement and building trust.</p>
-                <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More</a>
+                <a class="btn-seemore icon-container
+                " data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonBlogKnowMoreClick()">Know More
+                  <i class="fa-regular fa-circle mx-1 mt-1 " style=" font-size: 10px;"></i></a>
               </div>
             </div>
           </div>
@@ -394,7 +403,7 @@
                     <p class="card-section-font colour-2  mt-lg-5 mb-md-3 mb-2">CRAFTING UNIQUE SOLUTIONS FOR YOUR BUSINESS</p>
                 </div>
                 <div class="col-md-6 col-5  d-flex justify-content-end ">
-                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonFooterGetStarted()">
                         Get Started
                         <i class="fa-regular fa-circle mx-1 mt-1" style="color:  rgba(255, 255, 255, 1); font-size: 10px;"></i>
                     </a>

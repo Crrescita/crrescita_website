@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { ToastrService } from 'ngx-toastr';
 import { Router, RouterModule } from '@angular/router';
 import { TestApiService } from '../test-api.service';
+import { GoogleAnalyticsService } from 'ngx-google-analytics';
 
 @Component({
   selector: 'app-modal-form',
@@ -24,7 +25,9 @@ export class ModalFormComponent {
     private api:TestApiService, 
     private fb:FormBuilder, 
     private router: Router ,
-    private toastr: ToastrService){
+    private toastr: ToastrService,
+    private gaService: GoogleAnalyticsService
+  ){
   
   
     this.formGroup = this.fb.group({
@@ -64,6 +67,10 @@ export class ModalFormComponent {
       // this.toastr.success(response.message, "Success");
       this.formGroup.reset();
       this.submitted = false;
+
+      // Fire Google Analytics event
+      this.gaService.event('popUpform_submission', 'submit', 'contact_form');
+
 
       this.toastr.success("thankyou for contact us our team will reach you", "success");
         

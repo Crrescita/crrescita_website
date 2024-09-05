@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { ToastrService } from 'ngx-toastr';
 import { TestApiService } from '../test-api.service';
 import { Router } from '@angular/router';
+import { GoogleAnalyticsService } from 'ngx-google-analytics';
 
 @Component({
   selector: 'app-custom-form',
@@ -23,7 +24,11 @@ export class CustomFormComponent {
     private api:TestApiService, 
     private fb:FormBuilder, 
     private router: Router ,
-    private toastr: ToastrService){
+    private toastr: ToastrService,
+    private gaService: GoogleAnalyticsService
+  ){
+
+ 
   
   
     this.formGroup = this.fb.group({
@@ -32,6 +37,8 @@ export class CustomFormComponent {
       email : ['', [Validators.required]],
       message : ['', []]
     })
+
+    
   }
   
   get g() {
@@ -63,6 +70,10 @@ export class CustomFormComponent {
       // this.toastr.success(response.message, "Success");
       this.formGroup.reset();
       this.submitted = false;
+
+       // Fire Google Analytics event
+       this.gaService.event('form_submission', 'submit', 'contact_form');
+
 
       this.router.navigate(['/thankyou']);
   } else {

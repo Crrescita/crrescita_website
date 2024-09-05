@@ -349,4 +349,12 @@
   width: auto;
 }
 
+.inner-box:hover{
+  background: linear-gradient(180deg, #0559CC 0%, #01193A 100%);
+  transition: background 0.3s ease-in-out;
+} 
+
+.inner-box:hover .colour-1{
   
+  color:  rgba(255, 255, 255, 1);
+} 

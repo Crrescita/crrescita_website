@@ -96,6 +96,15 @@ font-weight: 400 !important;
 }
 
   /* outfit font */
+
+
+  .font-outfit-16-mission{
+    font-family: "Outfit", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24.6px;
+  }
+
   .font-outfit-12{
     font-family: "Outfit", sans-serif;
 font-size: 10px;
@@ -271,11 +280,25 @@ line-height: 40.32px;
       font-size: 32px;
       line-height: 40px;
     }
+
+    .font-outfit-16-mission{
+      font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.6px;
+    }
    
     
 }
 
 @media  (max-width: 767px) { 
+
+  .font-outfit-16-mission{
+    
+
+line-height: 20.6px !important;
+  }
+
   .banner-font-24{
     line-height: 24px !important;
     font-size: 18px !important;
@@ -526,6 +549,20 @@ cursor: pointer;
   background-repeat: no-repeat;
 }
 
+/* button icon */
+
+.icon-container {
+  display: inline-block; /* Ensures the container fits the icon size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.icon-container:hover i {
+  background-color: #e8d373; 
+   color: #e8d373;
+   border-radius: 50%;
+ 
+
+}
 
 
 
@@ -642,5 +679,12 @@ cursor: pointer;
   border: none;
 }
 
+.image-container:hover {
+ background: linear-gradient(180deg, #01193A 0%, #0462E3 100%);
 
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+ 
+ 
+}
 

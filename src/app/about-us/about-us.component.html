@@ -13,7 +13,7 @@
                         <p class="banner-font-24 colour-6">Every brand has a story, and we’re here to help you tell it in the most captivating way possible. By leveraging our expertise in strategic branding, innovative design, and market insights, we position your brand for success in a competitive landscape.</p>
                         </div>
                         </div>
-                        <button href="#" class="btn-style px-2 py-0" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        <button href="#" class="btn-style px-2 py-0" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonClick()">
                             Get Started
                             <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
                         </button>
@@ -35,6 +35,9 @@
                         <p class="philosopher-36-bold colour-1 text-uppercase m-0">Creative Hub</p>
                         <hr class="home-mob-border m-0 ">
                         <p class="banner-font-24 colour-1 pt-1">Where Ideas Blossom and Designs Shine Bright - Unleash Your Brand's Potential Today!</p>
+                        <button href="#" class="btn-style px-2 py-0" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonClick()" >Get Started
+                            <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -62,8 +65,8 @@
                         We specialize in creating unique branding, innovative marketing strategies, and cutting-edge website development. the agency was founded, We specialize in creating unique branding, innovative marketing strategies, and cutting-edge website development. To deliver exceptional design solutions that drive success. help businesses stand out and succeed in a competitive market.
                     </p>
                     <div class="px-lg-3 d-none d-md-block">
-                        <button href="#" class="btn-style py-0 px-2">
-                            View All Projects
+                        <button href="#" class="btn-style py-0 px-2" (click)="trackButtonViewMoreClick()">
+                            View More
                             <i class="fa-regular fa-circle mx-1 mt-1 " style="color: #f0f2f4; font-size: 10px;"></i>
                         </button>
                     </div>
@@ -72,7 +75,7 @@
         </div>
     </div>
 </section>
-<section class="mt-lg-5 mt-4 ">
+<!-- <section class="mt-lg-5 mt-4 ">
     <div class="sec-two-banner py-md-5 py-3">
         <div class="container py-lg-4">
             <div class="row ">
@@ -111,7 +114,57 @@
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="mt-lg-5 mt-4 ">
+    <div class="sec-two-banner py-md-5 py-3">
+        <div class="container py-lg-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 ">
+                    <div class="d-none d-md-block position-relative hover-box">
+                        <img src="../../assets/img/about/img-3.png" alt="Image 1" class="img-fluid hover-image">
+                        <div class="position-absolute top-50 start-50 translate-middle  hover-content w-100 p-lg-5 p-md-3 p-5" >
+                            <p class="colour-1 philosopher-32-bold hover-hed text-center">OUR MISSION</p>
+                            <!-- Hidden extra content -->
+                            <p class="extra-content colour-1 font-outfit-16-mission ">
+
+                                At Crrescita, our mission is to help businesses succeed in the digital age through innovative solutions and technology. We focus on elevating brands, expanding digital presence, and unlocking their full potential.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 ">
+                    <div class="position-relative hover-box">
+                        <img src="../../assets/img/about/img-2.png" alt="Image 2" class="img-fluid hover-image">
+                        <div class="position-absolute top-50 start-50 translate-middle  hover-content w-100 p-lg-5 p-md-3 p-5">
+                            <p class="colour-1 philosopher-32-bold text-center hover-hed">OUR VISION</p>
+                            <!-- Hidden extra content -->
+                            <p class="extra-content  colour-1 font-outfit-16-mission">
+                                
+At Crrescita, our vision is to empower businesses with cutting-edge digital solutions that drive growth and innovation. We aim to be a trusted partner in elevating brand presence and achieving business goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 ">
+                    <div class="position-relative hover-box">
+                        <img src="../../assets/img/about/img-1.png" alt="Image 3" class="img-fluid hover-image">
+                        <div class="position-absolute top-50 start-50 translate-middle hover-content w-100 p-lg-5 p-md-3 p-5">
+                            <p class="colour-1 philosopher-32-bold hover-hed text-center">OUR VALUES</p>
+                            <!-- Hidden extra content -->
+                            <p class="extra-content colour-1 font-outfit-16-mission">
+                                At the heart of everything we do lies a commitment to excellence, innovation, and client success. Our values guide our approach in delivering top-tier services in web development, branding, and digital marketing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+
+
 <section class="mt-lg-5 mt-4  pb-lg-5 mb-4">
     <div class="container">
         <div class="row">
@@ -164,9 +217,10 @@
         <div class="box-main py-md-5 py-3 px-md-5 px-3">
             <div class="d-none d-md-block">
                 <div class="row mt-2 ">
-                    <div class="col-md-4  d-flex align-items-stretch">
-                        <div class="box border-rb  pb-md-5 pb-3">
-                            <div class="circle-img">
+                    <div class="col-md-4  d-flex align-items-stretch ">
+                        <div class="hover-bg p-3">
+                        <div class="box border-rb  pb-md-5 pb-3 ">
+                            <div class="circle-img ">
                                 <img src="../../assets/img/about/s-icon-2.png" alt="Icon 1" class="img-fluid">
                             </div>
                             <p class="font-outfit-bold-24 colour-1 mt-1 px-md-3 text-uppercase">Investigate</p>
@@ -175,8 +229,10 @@
                             </p>
                         </div>
                     </div>
+                    </div>
                     <div class="col-md-4  d-flex align-items-stretch">
-                        <div class="box border-rb pb-md-5 pb-3">
+                        <div class="hover-bg p-3">
+                        <div class="box border-rb pb-md-5 pb-3 ">
                             <div class="circle-img">
                                 <img src="../../assets/img/about/s-icon1.png" alt="Icon 2">
                             </div>
@@ -185,9 +241,11 @@
                                 Post investigating a problem statement, we stand out by understanding the problem statement on a business standpoint of our customers.
                             </p>
                         </div>
+                        </div>
                     </div>
                     <div class="col-md-4  d-flex align-items-stretch">
-                        <div class="box border-b pb-md-5 pb-3">
+                        <div class="hover-bg p-3">
+                        <div class="box border-b pb-md-5 pb-3 ">
                             <div class="circle-img">
                                 <img src="../../assets/img/about/s-icon-3.png" alt="Icon 3">
                             </div>
@@ -195,9 +253,11 @@
                             <p class="font-outfit-regular-20 colour-3 px-md-3">
                                 Our brilliance lies in brainstorming solutions before we start creating a strategy to implement and measure the same</p>
                         </div>
+                        </div>
                     </div>
                     <div class="col-md-4 mt-4 d-flex align-items-stretch">
-                        <div class="box border-r pb-md-5 pb-3">
+                        <div class="hover-bg p-3">
+                        <div class="box border-r pb-md-5 pb-3 ">
                             <div class="circle-img">
                                 <img src="../../assets/img/about/s-icon-4.png" alt="Icon 3">
                             </div>
@@ -206,9 +266,11 @@
                                 As soon as we have brainstormed the correct technological solutions, we strive to get it aligned to the business stand point of the customer and create
                             </p>
                         </div>
+                        </div>
                     </div>
                     <div class="col-md-4 mt-4  d-flex align-items-stretch">
-                        <div class="box border-r pb-md-5 pb-3">
+                        <div class="hover-bg p-3">
+                        <div class="box border-r pb-md-5 pb-3 ">
                             <div class="circle-img">
                                 <img src="../../assets/img/about/s-icon-5.png" alt="Icon 3">
                             </div>
@@ -217,9 +279,11 @@
                                 We now get into the most important phase of integrating and implementing the solution created around the identified problem statement.
                             </p>
                         </div>
+                        </div>
                     </div>
                     <div class="col-md-4 mt-4  d-flex align-items-stretch">
-                        <div class="box pb-md-5 pb-3">
+                        <div class="hover-bg p-3">
+                        <div class="box pb-md-5 pb-3 ">
                             <div class="circle-img">
                                 <img src="../../assets/img/about/s-icon-6.png" alt="Icon 3">
                             </div>
@@ -227,6 +291,7 @@
                             <p class="font-outfit-regular-20 colour-3 px-md-3 mb-0">
                                 For us just implementation doesn't matter, we believing in measuring the work done much more than the traditional approach of understanding
                             </p>
+                        </div>
                         </div>
                     </div>
                     <!-- Add more boxes as needed -->
@@ -319,8 +384,8 @@
                         <p class="philosopher-40-bold colour-1 mb-0">OUR WORK</p>
                         <p class="font-outfit-24 f-w-400 mb-2">Explore our case studies</p>
                        
-                        <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More
-                            <i class="fa-regular fa-circle mx-1 mt-1" style="color:rgba(1, 25, 58, 1); font-size: 10px;"></i>
+                        <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonKnowMoreClick()">Know More
+                            <i class="fa-regular fa-circle mx-1 mt-1" style=" font-size: 10px;"></i>
                         </a>
                     </div>
                 </div>
@@ -328,8 +393,8 @@
                     <div class=" px-lg-2    text-center text-md-start">
                         <p class="philosopher-40-bold colour-1 mb-0 text-uppercase">OUR Process</p>
                         <p class="font-outfit-24 f-w-400 mb-2">Explore our process</p>
-                        <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More
-                            <i class="fa-regular fa-circle mx-1 mt-1" style="color:rgba(1, 25, 58, 1); font-size: 10px;"></i>
+                        <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonKnowMoreClick()">Know More
+                            <i class="fa-regular fa-circle mx-1 mt-1" style=" font-size: 10px;"></i>
                         </a>
                     </div>
                 </div>
@@ -337,8 +402,8 @@
                     <div class=" px-lg-2    text-center text-md-start">
                         <p class="philosopher-40-bold colour-1 mb-0 text-uppercase">Careers</p>
                         <p class="font-outfit-24 f-w-400 mb-2">Join  our team</p>
-                        <a class="btn-seemore" data-bs-toggle="modal" data-bs-target="#contactModal">Know More
-                            <i class="fa-regular fa-circle mx-1 mt-1" style="color:rgba(1, 25, 58, 1); font-size: 10px;"></i>
+                        <a class="btn-seemore icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonKnowMoreClick()">Know More
+                            <i class="fa-regular fa-circle mx-1 mt-1" style=" font-size: 10px;"></i>
                         </a>
                     </div>
                 </div>
@@ -411,7 +476,7 @@
                     <p class="card-section-font colour-2  mt-lg-5 mb-md-3 mb-2">CRAFTING UNIQUE SOLUTIONS FOR YOUR BUSINESS</p>
                 </div>
                 <div class="col-md-6 col-5  d-flex justify-content-end ">
-                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <a class="btn-seemore mt-lg-5 mt-3 text-white fw-normal" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="trackButtonFooterGetStarted()">
                         Get Started
                         <i class="fa-regular fa-circle mx-1 mt-1" style="color:  rgba(255, 255, 255, 1); font-size: 10px;"></i>
                     </a>
