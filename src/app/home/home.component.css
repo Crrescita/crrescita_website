@@ -1,10 +1,12 @@
 /* home css start */
 .banner-desktop-home {
 
-  background-image: url('../../assets/img/home/home-banner-desktop.jpg'), 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.719), rgba(191, 155, 60, 0.6));
+  background-image: url('../../assets/img/home/home-11.jpg'), 
+  linear-gradient(to bottom, rgba(165, 164, 164, 0.795), rgb(77 71 54 / 85%));;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-size: cover, cover;  */
+    background-blend-mode: overlay; 
+    background-position: unset;
     width: 100%;
     
     display: flex;

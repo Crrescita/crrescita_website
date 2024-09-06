@@ -2,13 +2,13 @@
 
    
 
-    background-image: url('../../assets/img/about/about-1.png'),
-    linear-gradient(to bottom , rgba(28, 24, 24, 0.758), rgba(217, 195, 134, 0.689));
+    background-image: url('../../assets/img/about/about-bg-1.jpg'),
+    linear-gradient(to bottom ,rgb(136 120 120), rgba(44, 42, 39, 0.943));;
 background-size: cover, cover; 
 background-blend-mode: overlay; 
 
 
-    background-position: center;
+    /* background-position: center; */
     width: 100%;
   background-size: cover;
     display: flex;

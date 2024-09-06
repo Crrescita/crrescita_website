@@ -17,9 +17,10 @@
 
   .banner-mob-home {
     background-image: url('../../assets/img/contact/contact-mob-banner.png'),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.719), rgba(230, 175, 24, 0.934));
-    background-size: cover;
-    background-position: bottom;
+    linear-gradient(to bottom,rgba(105, 101, 101, 0.436), rgba(184, 147, 44, 0.692));
+    background-size: cover, cover; 
+    background-blend-mode: overlay; 
+  
     display: flex;
     align-items: center;
     justify-content: center;
