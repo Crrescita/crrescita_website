@@ -2,8 +2,7 @@
 
    
 
-    background-image: url('../../assets/img/about/about-bg-1.jpg'),
-    linear-gradient(to bottom ,rgb(136 120 120), rgba(44, 42, 39, 0.943));;
+    background-image: url('../../assets/img/about/about-bg-1.jpg'), linear-gradient(to top, rgb(38 38 37), rgb(239 189 113 / 34%));
 background-size: cover, cover; 
 background-blend-mode: overlay; 
 
