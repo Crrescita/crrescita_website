@@ -360,3 +360,41 @@
   
   color:  rgba(255, 255, 255, 1);
 } 
+
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%; /* Larger to extend smokey effect beyond the image */
+  height: 150%;
+  background: radial-gradient(circle, rgba(4, 98, 227, 0.4) 0%, rgba(1, 25, 58, 0) 80%);
+  border-radius: 50%;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  z-index: 1;
+  opacity: 0;
+}
+
+.image-container:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05); /* Slightly scale the effect for more dynamic feel */
+}
+
+.image-container img {
+ 
+  position: relative;
+  z-index: 2;
+  transition: transform 0.5s ease; /* Image scaling transition */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); 
+}
