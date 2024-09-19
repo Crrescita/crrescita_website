@@ -18,6 +18,7 @@ export class CustomFormComponent {
   formGroup!:FormGroup
   submitted = false;
   btndisabled: boolean = false;
+  submittedFrom: string = '';
   
 
   constructor(
@@ -27,6 +28,7 @@ export class CustomFormComponent {
     private toastr: ToastrService,
     private gaService: GoogleAnalyticsService
   ){
+    this.submittedFrom = this.router.url;
 
  
   
@@ -35,7 +37,9 @@ export class CustomFormComponent {
       name : ['', [Validators.required]],
       phone : ['', [Validators.required]],
       email : ['', [Validators.required]],
-      message : ['', []]
+      message : ['', []],
+      submittedFrom: [this.submittedFrom], 
+      
     })
 
     
@@ -50,6 +54,9 @@ export class CustomFormComponent {
       this.formGroup.markAllAsTouched();
       return;
     }
+
+    // Get the current URL from which the form is being submitted
+  const submittedFrom = this.router.url;
   
   
     const contactdata = {
@@ -57,6 +64,7 @@ export class CustomFormComponent {
       email: this.g['email'].value,
       phone: this.g['phone'].value,
       message: this.g['message'].value,
+      submittedFrom: submittedFrom 
     };
     this.btndisabled = true;
     this.submitted = true;

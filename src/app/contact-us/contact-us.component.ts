@@ -18,6 +18,7 @@ import { GoogleAnalyticsService } from 'ngx-google-analytics';
 })
 export class ContactUsComponent {
   formGroup!:FormGroup
+  submittedFrom: string = '';
   
 
 constructor(
@@ -27,13 +28,15 @@ constructor(
   private toastr: ToastrService,
   private gaService: GoogleAnalyticsService
 ){
+  this.submittedFrom = this.router.url;
 
 
   this.formGroup = this.fb.group({
     name : ['', [Validators.required]],
     phone : ['', [Validators.required]],
     email : ['', [Validators.required]],
-    message : ['', []]
+    message : ['', []],
+    submittedFrom: [this.submittedFrom], 
   })
   
 }
@@ -52,25 +55,20 @@ submit(){
 
   // Get the current URL from which the form is being submitted
   const submittedFrom = this.router.url;
-  console.log('Submitted From URL:', submittedFrom);
+  // console.log('Submitted From URL:', submittedFrom);
 
-
-  // Capture the referrer URL (the page from which the user navigated to contact page)
-  const referrer = document.referrer || 'Direct traffic'; 
-  console.log('Referrer URL:', referrer);
-   // 'Direct traffic' if no referrer
-
+ 
   const contactdata = {
     name: this.g['name'].value,
     email: this.g['email'].value,
     phone: this.g['phone'].value,
     message: this.g['message'].value,
-    submittedFrom: submittedFrom ,
-    referrer: referrer       
+    submittedFrom: submittedFrom 
+        
    
   };
 
-  // console.log('Contact Data:', contactdata);
+ console.log('Contact Data:', contactdata);
 
 
 

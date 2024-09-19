@@ -178,6 +178,9 @@
                             <textarea class="form-control custom-input mb-0 pb-0" formControlName="message" placeholder="Message"></textarea>
                             <hr class="form-hr m-0 p-0">
                         </div>
+                        <div class="form-group mb-4">
+                            <input type="hidden" formControlName="submittedFrom" [value]="submittedFrom">
+                            </div>
                         <div class="form-group mb-5">
                             <button type="submit" class="btn-style py-0 px-2">Get In Touch</button>
                         </div>

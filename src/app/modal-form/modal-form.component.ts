@@ -19,6 +19,8 @@ export class ModalFormComponent {
   formGroup!:FormGroup
   submitted = false;
   btndisabled: boolean = false;
+  submittedFrom: string = '';
+
   
 
   constructor(
@@ -28,13 +30,16 @@ export class ModalFormComponent {
     private toastr: ToastrService,
     private gaService: GoogleAnalyticsService
   ){
+    this.submittedFrom = this.router.url;
   
   
     this.formGroup = this.fb.group({
       name : ['', [Validators.required]],
       phone : ['', [Validators.required]],
       email : ['', [Validators.required]],
-      message : ['', []]
+      message : ['', []],
+      submittedFrom: [this.submittedFrom], 
+     
     })
   }
   
@@ -51,13 +56,11 @@ export class ModalFormComponent {
     
   // Get the current URL from which the form is being submitted
   const submittedFrom = this.router.url;
-  console.log('Submitted From URL:', submittedFrom);
+  // console.log('Submitted From URL:', submittedFrom);
 
 
-  // Capture the referrer URL (the page from which the user navigated to contact page)
-  const referrer = document.referrer || 'Direct traffic'; 
-  console.log('Referrer URL:', referrer);
-   // 'Direct traffic' if no referrer
+  
+  
   
   
     const contactdata = {
@@ -66,8 +69,10 @@ export class ModalFormComponent {
       phone: this.g['phone'].value,
       message: this.g['message'].value,
       submittedFrom: submittedFrom ,
-      referrer: referrer 
+    
     };
+
+    // console.log(contactdata)
 
     this.btndisabled = true;
     this.submitted = true;
@@ -96,7 +101,6 @@ export class ModalFormComponent {
       this.btndisabled = false;
       this.toastr.error("An error occurred. Please try again.", "Error");
   }
-  
   
   },
   (error) => {
