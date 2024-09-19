@@ -35,6 +35,7 @@ constructor(
     email : ['', [Validators.required]],
     message : ['', []]
   })
+  
 }
 
 get g() {
@@ -42,18 +43,38 @@ get g() {
 }
 
 submit(){
+  console.log('Submit method called');
+
   if (this.formGroup.invalid) {
     this.formGroup.markAllAsTouched();
     return;
   }
 
+  // Get the current URL from which the form is being submitted
+  const submittedFrom = this.router.url;
+  console.log('Submitted From URL:', submittedFrom);
+
+
+  // Capture the referrer URL (the page from which the user navigated to contact page)
+  const referrer = document.referrer || 'Direct traffic'; 
+  console.log('Referrer URL:', referrer);
+   // 'Direct traffic' if no referrer
 
   const contactdata = {
     name: this.g['name'].value,
     email: this.g['email'].value,
     phone: this.g['phone'].value,
     message: this.g['message'].value,
+    submittedFrom: submittedFrom ,
+    referrer: referrer       
+   
   };
+
+  console.log('Contact Data:', contactdata);
+
+
+
+  
   this.api.post('contact/contactform', contactdata).subscribe((response:any)=>{
   //  console.log(response)
 

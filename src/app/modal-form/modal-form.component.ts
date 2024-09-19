@@ -47,6 +47,17 @@ export class ModalFormComponent {
       this.formGroup.markAllAsTouched();
       return;
     }
+
+    
+  // Get the current URL from which the form is being submitted
+  const submittedFrom = this.router.url;
+  console.log('Submitted From URL:', submittedFrom);
+
+
+  // Capture the referrer URL (the page from which the user navigated to contact page)
+  const referrer = document.referrer || 'Direct traffic'; 
+  console.log('Referrer URL:', referrer);
+   // 'Direct traffic' if no referrer
   
   
     const contactdata = {
@@ -54,7 +65,10 @@ export class ModalFormComponent {
       email: this.g['email'].value,
       phone: this.g['phone'].value,
       message: this.g['message'].value,
+      submittedFrom: submittedFrom ,
+      referrer: referrer 
     };
+
     this.btndisabled = true;
     this.submitted = true;
 
