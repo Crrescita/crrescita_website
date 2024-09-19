@@ -55,7 +55,7 @@ export class CustomFormComponent {
       return;
     }
 
-    // Get the current URL from which the form is being submitted
+    
   const submittedFrom = this.router.url;
   
   
@@ -71,7 +71,7 @@ export class CustomFormComponent {
 
 
     this.api.post('contact/contactform', contactdata).subscribe((response:any)=>{
-    //  console.log(response)
+   
   
      if (response.status === 200) {
       this.btndisabled = false;
