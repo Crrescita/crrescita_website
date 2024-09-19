@@ -43,7 +43,7 @@ get g() {
 }
 
 submit(){
-  console.log('Submit method called');
+  // console.log('Submit method called');
 
   if (this.formGroup.invalid) {
     this.formGroup.markAllAsTouched();
@@ -70,7 +70,7 @@ submit(){
    
   };
 
-  console.log('Contact Data:', contactdata);
+  // console.log('Contact Data:', contactdata);
 
 
 
