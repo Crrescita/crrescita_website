@@ -19,6 +19,9 @@ export class CustomFormComponent {
   submitted = false;
   btndisabled: boolean = false;
   submittedFrom: string = '';
+  fullUrl: string = '';
+
+
   
 
   constructor(
@@ -28,7 +31,9 @@ export class CustomFormComponent {
     private toastr: ToastrService,
     private gaService: GoogleAnalyticsService
   ){
+    const baseUrl = window.location.origin; // Protocol + domain
     this.submittedFrom = this.router.url;
+    this.fullUrl = `${baseUrl}${this.submittedFrom}`; // Combine them for the full URL
 
  
   
@@ -38,7 +43,7 @@ export class CustomFormComponent {
       phone : ['', [Validators.required]],
       email : ['', [Validators.required]],
       message : ['', []],
-      submittedFrom: [this.submittedFrom], 
+      submittedFrom: [this.fullUrl], 
       
     })
 
@@ -56,7 +61,7 @@ export class CustomFormComponent {
     }
 
     
-  const submittedFrom = this.router.url;
+  
   
   
     const contactdata = {
@@ -64,7 +69,7 @@ export class CustomFormComponent {
       email: this.g['email'].value,
       phone: this.g['phone'].value,
       message: this.g['message'].value,
-      submittedFrom: submittedFrom 
+      submittedFrom: this.fullUrl 
     };
     this.btndisabled = true;
     this.submitted = true;

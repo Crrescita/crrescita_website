@@ -19,6 +19,7 @@ import { GoogleAnalyticsService } from 'ngx-google-analytics';
 export class ContactUsComponent {
   formGroup!:FormGroup
   submittedFrom: string = '';
+  fullUrl: string = '';
   
 
 constructor(
@@ -28,7 +29,9 @@ constructor(
   private toastr: ToastrService,
   private gaService: GoogleAnalyticsService
 ){
-  this.submittedFrom = this.router.url;
+  const baseUrl = window.location.origin; // Protocol + domain
+    this.submittedFrom = this.router.url;
+    this.fullUrl = `${baseUrl}${this.submittedFrom}`;
 
 
   this.formGroup = this.fb.group({
@@ -36,7 +39,7 @@ constructor(
     phone : ['', [Validators.required]],
     email : ['', [Validators.required]],
     message : ['', []],
-    submittedFrom: [this.submittedFrom], 
+    submittedFrom: [this.fullUrl], 
   })
   
 }
@@ -53,17 +56,13 @@ submit(){
     return;
   }
 
-  // Get the current URL from which the form is being submitted
-  const submittedFrom = this.router.url;
-  // console.log('Submitted From URL:', submittedFrom);
 
- 
   const contactdata = {
     name: this.g['name'].value,
     email: this.g['email'].value,
     phone: this.g['phone'].value,
     message: this.g['message'].value,
-    submittedFrom: submittedFrom 
+    submittedFrom: this.fullUrl 
         
    
   };
