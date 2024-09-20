@@ -8,6 +8,8 @@ import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { ModalFormComponent } from '../modal-form/modal-form.component';
 import { GoogleAnalyticsService } from 'ngx-google-analytics';
+import { environment } from '../../environment';
+
 
 @Component({
   selector: 'app-contact-us',
@@ -29,9 +31,8 @@ constructor(
   private toastr: ToastrService,
   private gaService: GoogleAnalyticsService
 ){
-  const baseUrl = window.location.origin; // Protocol + domain
-    this.submittedFrom = this.router.url;
-    this.fullUrl = `${baseUrl}${this.submittedFrom}`;
+  this.submittedFrom = this.router.url;
+  this.fullUrl = `${environment.baseUrl}${this.submittedFrom}`;
 
 
   this.formGroup = this.fb.group({

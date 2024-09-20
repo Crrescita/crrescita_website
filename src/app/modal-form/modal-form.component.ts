@@ -5,7 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 import { Router, RouterModule } from '@angular/router';
 import { TestApiService } from '../test-api.service';
 import { GoogleAnalyticsService } from 'ngx-google-analytics';
-
+import { environment } from '../../environment'; 
 @Component({
   selector: 'app-modal-form',
   standalone: true,
@@ -31,9 +31,9 @@ export class ModalFormComponent {
     private toastr: ToastrService,
     private gaService: GoogleAnalyticsService
   ){
-    const baseUrl = window.location.origin; // Protocol + domain
+    
     this.submittedFrom = this.router.url;
-    this.fullUrl = `${baseUrl}${this.submittedFrom}`;
+    this.fullUrl = `${environment.baseUrl}${this.submittedFrom}`; // Using environment's baseUrl
   
   
     this.formGroup = this.fb.group({
@@ -79,7 +79,7 @@ export class ModalFormComponent {
 
 
     this.api.post('contact/contactform', contactdata).subscribe((response:any)=>{
-    //  console.log(response)
+     console.log(response)
   
      if (response.status === 200) {
       this.btndisabled = false;

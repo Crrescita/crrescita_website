@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 import { TestApiService } from '../test-api.service';
 import { Router } from '@angular/router';
 import { GoogleAnalyticsService } from 'ngx-google-analytics';
-
+import { environment } from '../../environment'; 
 @Component({
   selector: 'app-custom-form',
   standalone: true,
@@ -31,9 +31,8 @@ export class CustomFormComponent {
     private toastr: ToastrService,
     private gaService: GoogleAnalyticsService
   ){
-    const baseUrl = window.location.origin; // Protocol + domain
     this.submittedFrom = this.router.url;
-    this.fullUrl = `${baseUrl}${this.submittedFrom}`; // Combine them for the full URL
+    this.fullUrl = `${environment.baseUrl}${this.submittedFrom}`;  // Combine them for the full URL
 
  
   
@@ -76,7 +75,7 @@ export class CustomFormComponent {
 
 
     this.api.post('contact/contactform', contactdata).subscribe((response:any)=>{
-   
+   console.log(response)
   
      if (response.status === 200) {
       this.btndisabled = false;
